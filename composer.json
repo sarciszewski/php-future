@@ -23,7 +23,7 @@
         "source":   "https://github.com/resonantcore/php-future"
     },
     "autoload": {
-        "autoload.php"
+        "files": ["autoload.php"]
     },
     "require-dev": {
         "phpunit/phpunit": "4.5.*"
