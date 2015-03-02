@@ -1,0 +1,31 @@
+{
+    "name":         "resonantcore/php-future",
+    "description":  "Polyfill new (5.6+) features into old (5.4+) versions of PHP",
+    "version":      "0.1.0",
+    "keywords": [
+            "security",
+            "compatibility",
+            "hash_equals"
+        ],
+    "license":      "(MIT)",
+    "type":         "library",
+    "authors": [
+            {
+                "name":     "Scott Arciszewski",
+                "email":    "scott@resonantcore.net",
+                "homepage": "https://resonantcore.net",
+                "role":     "Developer"
+            }
+        ],
+    "support": {
+        "issues":   "https://github.com/resonantcore/php-future/issues",
+        "email":    "info@resonantcore.net",
+        "source":   "https://github.com/resonantcore/php-future"
+    },
+    "autoload": {
+        "autoload.php"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.5.*"
+    }
+}
