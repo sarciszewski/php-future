@@ -1,7 +1,7 @@
 {
     "name":         "resonantcore/php-future",
     "description":  "Polyfill new (5.6+) features into old (5.4+) versions of PHP",
-    "version":      "0.1.0",
+    "version":      "0.1.1",
     "keywords": [
             "security",
             "future",
