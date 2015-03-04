@@ -4,10 +4,11 @@
     "version":      "0.1.0",
     "keywords": [
             "security",
+            "future",
             "compatibility",
             "hash_equals"
         ],
-    "license":      "(MIT)",
+    "license":      "MIT",
     "type":         "library",
     "authors": [
             {

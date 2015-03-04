@@ -35,9 +35,6 @@ class Security
      */
     public static function hash_equals($knownString, $userString)
     {
-        if (function_exists('\\hash_equals')) {
-            return \hash_equals($knownString, $userString);
-        }
         // We have to roll our own
         $kLen = self::_strlen($knownString);
         $uLen = self::_strlen($userString);

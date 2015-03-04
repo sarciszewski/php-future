@@ -1,4 +1,5 @@
 <?php
+use \Resonantcore\PHPFuture as Future;
 spl_autoload_register(function ($class) {
     
     // project-specific namespace prefix
@@ -28,7 +29,20 @@ spl_autoload_register(function ($class) {
     }
 });
 
-function hash_equals($a, $b)
-{
-    return \Resonantcore\PHPFutre\Security::hash_equals($a, $b);
+if (!function_exists('hash_equals')) {
+    /**
+     * From PHP 5.6
+     * 
+     * @param string $a
+     * @param string $b
+     * @ref https://php.net/hash_equals
+     * @return boolean
+     */
+    function hash_equals($known_string, $user_string)
+    {
+        return Future\Security::hash_equals(
+            $known_string,
+            $user_string
+        );
+    }
 }
