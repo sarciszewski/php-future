@@ -33,11 +33,11 @@ class Security
      * @param  string $userString
      * @return bool
      */
-    public static function hash_equals($knownString, $userString)
+    public static function hashEquals($knownString, $userString)
     {
         // We have to roll our own
-        $kLen = self::_strlen($knownString);
-        $uLen = self::_strlen($userString);
+        $kLen = self::ourStrlen($knownString);
+        $uLen = self::ourStrlen($userString);
         if ($kLen !== $uLen) {
             return false;
         }
@@ -55,7 +55,7 @@ class Security
      * @param string $str
      * @return int
      */
-    private static function _strlen($str)
+    private static function ourStrlen($str)
     {
         // Premature optimization: cache the function_exists() result
         static $exists = null;
