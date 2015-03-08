@@ -13,6 +13,7 @@ Refer to http://php.net/eol.php for the latest updates on supported PHP versions
 ## Features polyfilled by this library
 
 * PHP 5.5
+  * `array_column()`
   * `boolval()`
   * `hash_pbkdf2()`
   * `openssl_pbkdf2()`

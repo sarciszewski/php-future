@@ -2,7 +2,6 @@ PHP 5.5
 
     FUNCTIONS
     =========
-    array_column()
     curl_escape()
     curl_unescape()
     pg_escape_literal()

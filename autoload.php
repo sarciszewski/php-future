@@ -30,6 +30,27 @@ spl_autoload_register(function ($class) {
 });
 error_reporting(E_ALL); ini_set('display_errors', 'On');
 
+
+if (!function_exists('array_column')) {
+    /**
+     * Get the boolean value of a variable
+     */
+    function array_column(array $array, $column_key, $index_key = null)
+    {
+        return Future\Utility::arrayColumn($array, $column_key, $index_key);
+    }
+}
+
+if (!function_exists('boolval')) {
+    /**
+     * Get the boolean value of a variable
+     */
+    function boolval($mixed_var)
+    {
+        return !!$mixed_var;
+    }
+}
+
 if (!function_exists('hash_equals')) {
     /**
      * From PHP 5.6
@@ -105,15 +126,5 @@ if (!function_exists('openssl_pbkdf2')) {
             $length
         );
         return $key;
-    }
-}
-
-if (!function_exists('boolval')) {
-    /**
-     * Get the boolean value of a variable
-     */
-    function boolval($mixed_var)
-    {
-        return !!$mixed_var;
     }
 }
