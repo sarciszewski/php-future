@@ -4,6 +4,10 @@ This library backports some new features into old versions of PHP.
 
 This **MIT Licensed** project is produced and maintained by [Resonant Core](https://resonantcore.net) for the good of the PHP developer community.
 
+## WARNING ABOUT APPLICATION SECURITY
+
+This should ONLY be used in the case that you cannot upgrade PHP for specific reasons within your business rules. For best application security you should always run the latest version of PHP where ever possible. This is intended as a stop gap for those that cannot upgrade and can be used while working toward upgrading to the latest version.
+
 ## ATTENTION PHP 5.2 / 5.3 USERS
 
 We don't support versions of PHP that have reached or exceeded their end-of-life date.
