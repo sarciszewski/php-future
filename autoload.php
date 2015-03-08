@@ -107,3 +107,13 @@ if (!function_exists('openssl_pbkdf2')) {
         return $key;
     }
 }
+
+if (!function_exists('boolval')) {
+    /**
+     * Get the boolean value of a variable
+     */
+    function boolval($mixed_var)
+    {
+        return !!$mixed_var;
+    }
+}
