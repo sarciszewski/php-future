@@ -8,16 +8,18 @@ We don't support versions of PHP that have reached or exceeded their end-of-life
 At the time of this writing, it means we require PHP 5.4.0 or newer.
 Refer to http://php.net/eol.php for the latest updates on supported PHP versions.
 
-Features polyfilled by this library:
+## Features polyfilled by this library
 
 * PHP 5.5
-  * N/A
+  * `boolval()`
+  * `hash_pbkdf2()`
+  * `openssl_pbkdf2()`
 * PHP 5.6
   * `hash_equals()`
 * PHP 7.0
   * N/A
 
-Out of scope:
+### Out of scope:
 
 * Password API - Go directly to https://github.com/ircmaxell/password_compat for these implementations
   * `password_hash()`
