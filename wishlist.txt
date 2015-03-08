@@ -4,8 +4,6 @@ PHP 5.5
     =========
     array_column()
     boolval()
-    hash_pbkdf2()
-    openssl_pbkdf2()
     curl_escape()
     curl_unescape()
     pg_escape_literal()
