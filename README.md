@@ -10,7 +10,7 @@ This should ONLY be used in the case that you cannot upgrade PHP for specific re
 
 ## ATTENTION PHP 5.2 / 5.3 USERS
 
-We only officially support for versions of PHP that have reached or exceeded their end-of-life date. The code should still run on **5.3**. Don't try to run it on 5.2. Refer to http://php.net/eol.php for the latest updates on supported PHP versions.
+We only officially support for versions of PHP that have not reached or exceeded their end-of-life date. As of this writing, that means 5.4 and newer. **The code should still run on 5.3**. Don't try to run it on 5.2. Refer to http://php.net/eol.php for the latest updates on supported PHP versions.
 
 ## Features polyfilled by this library
 
