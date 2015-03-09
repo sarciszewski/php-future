@@ -38,7 +38,7 @@ class Utility
      */
     public static function arrayColumn(array $array, $column_key, $index_key = null)
     {
-        $aReturn = [];
+        $aReturn = array;
         if ($column_key === null) {
             // No column key? Grab the whole row...
             if ($index_key === null) {
