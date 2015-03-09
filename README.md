@@ -14,6 +14,9 @@ We only officially support for versions of PHP that have not reached or exceeded
 
 ## Features polyfilled by this library
 
+
+* PHP 5.4
+  * None, because that could encourage the continued use of 5.3
 * PHP 5.5
   * `array_column()`
   * `boolval()`
