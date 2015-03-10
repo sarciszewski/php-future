@@ -70,15 +70,6 @@ if (!function_exists('array_column')) {
         return Future\Utility::arrayColumn($array, $column_key, $index_key);
     }
 }
-if (!function_exists('getimagesizefromstring')) {
-    /**
-     * Get the size of an image from a string
-     */
-    function array_column(array $array, $column_key, $index_key = null)
-    {
-        return Future\Image::
-    }
-}
 
 if (!function_exists('boolval')) {
     /**

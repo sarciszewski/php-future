@@ -2,16 +2,29 @@
 
 ## 0.3.0
 
+Widened scope to include 5.3 because of LTS operating systems.
+Also added a `BaseFuture` class to prevent code duplication.
 
+### New functions polyfilled
+
+* `getimagesizefromstring()`
+* `hex2bin()`
+
+### New interfaces polyfilled
+
+* **PHP 5.4**
+    * `JsonSerializable`
+    * `SessionHandlerInterface`
 
 ## 0.2.0
 
-New functions polyfilled
+### New functions polyfilled
 
-* `array_column()`
-* `boolval()`
-* `hash_pbkdf2()`
-* `openssl_pbkdf2()`
+* **PHP 5.5**
+    * `array_column()`
+    * `boolval()`
+    * `hash_pbkdf2()`
+    * `openssl_pbkdf2()`
 
 ## 0.1.1
 
