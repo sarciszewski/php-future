@@ -30,6 +30,8 @@ We do not support PHP 5.2.x anywhere. Please upgrade to a newer version of PHP.
 * PHP 7.0
   * N/A
 
+See [wishlist.txt] for features we will be providing as time goes on.
+
 ### Out of scope:
 
 * Password API - Go directly to https://github.com/ircmaxell/password_compat for these implementations
