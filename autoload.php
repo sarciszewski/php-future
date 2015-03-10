@@ -38,7 +38,7 @@ if (!interface_exists('JsonSerializable')) {
      */
     interface JsonSerializable
     {
-        abstract public function jsonSerialize();
+        public function jsonSerialize();
     }
 }
 
@@ -51,12 +51,12 @@ if (!interface_exists('SessionHandlerInterface')) {
      */
     interface SessionHandlerInterface
     {
-        abstract public close();
-        abstract public destroy($session_id);
-        abstract public gc($maxlifetime);
-        abstract public open($save_path, $name);
-        abstract public read($session_id);
-        abstract public write($session_id, $session_data);
+        public function close();
+        public function destroy($session_id);
+        public function gc($maxlifetime);
+        public function open($save_path, $name);
+        public function read($session_id);
+        public function write($session_id, $session_data);
     }
 }
 
