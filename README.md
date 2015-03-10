@@ -18,7 +18,6 @@ We do not support PHP 5.2.x anywhere. Please upgrade to a newer version of PHP.
 
 ## Features polyfilled by this library
 
-
 * PHP 5.4
   * N/A
 * PHP 5.5
