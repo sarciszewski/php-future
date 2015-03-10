@@ -24,7 +24,7 @@ namespace ResonantCore\PHPFuture;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-class Security
+class Security extends BaseFuture
 {
     /**
      * Equivalent to hash_equals() in PHP 5.6 
@@ -84,51 +84,5 @@ class Security
             $output .= $xorsum;
         }
         return self::ourSubstr($output, 0, $length);
-    }
-
-    /**
-     * Multi-byte-safe string length calculation
-     * 
-     * @param string $str
-     * @return int
-     */
-    private static function ourStrlen($str)
-    {
-        // Premature optimization: cache the function_exists() result
-        static $exists = null;
-        if ($exists === null) {
-            $exists = \function_exists('\\mb_strlen');
-        }
-        
-        // If it exists, we need to make sure we're using 8bit mode
-        if ($exists) {
-            return \mb_strlen($str, '8bit');
-        }
-        return \strlen($str);
-    }
-
-    /**
-     * Multi-byte-safe substring calculation
-     *
-     * @param string $str
-     * @param int $start
-     * @param int $length (optional)
-     * @return string
-     */
-    private static function ourSubstr($str, $start = 0, $length = null)
-    {
-        // Premature optimization: cache the function_exists() result
-        static $exists = null;
-        if ($exists === null) {
-            $exists = \function_exists('\\mb_substr');
-        }
-
-        // If it exists, we need to make sure we're using 8bit mode
-        if ($exists) {
-            return \mb_substr($str, $start, $length, '8bit');
-        } elseif ($length !== null) {
-            return \substr($str, $start, $length);
-        }
-        return \substr($str, $start);
     }
 }

@@ -25,7 +25,7 @@ namespace ResonantCore\PHPFuture;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-class Utility
+class Utility extends BaseFuture
 {
     /**
      * Return the values from a single column in the input array
@@ -57,5 +57,21 @@ class Utility
             }
         }
         return $aReturn;
+    }
+
+    /**
+     * Convert a hexadecimal string into raw binary
+     *
+     * @param string $data Hexadecimal data
+     *
+     * @return string
+     */
+    public static function hexToBin($data)
+    {
+        if (self::ourStrlen($data) % 2 !== 0) {
+            \trigger_error("hex2bin(): Hexadecimal input string must have an even length", E_USER_WARNING);
+            return false;
+        }
+        return \pack('H*', $data);
     }
 }

@@ -28,7 +28,37 @@ spl_autoload_register(function ($class) {
         require $file;
     }
 });
-error_reporting(E_ALL); ini_set('display_errors', 'On');
+
+
+if (!interface_exists('JsonSerializable')) {
+    /**
+     * From PHP 5.4
+     *
+     * @ref http://us3.php.net/manual/en/class.jsonserializable.php
+     */
+    interface JsonSerializable
+    {
+        abstract public function jsonSerialize();
+    }
+}
+
+if (!interface_exists('SessionHandlerInterface')) {
+
+    /**
+     * From PHP 5.4
+     *
+     * @ref http://php.net/manual/en/class.sessionhandlerinterface.php
+     */
+    interface SessionHandlerInterface
+    {
+        abstract public close();
+        abstract public destroy($session_id);
+        abstract public gc($maxlifetime);
+        abstract public open($save_path, $name);
+        abstract public read($session_id);
+        abstract public write($session_id, $session_data);
+    }
+}
 
 
 if (!function_exists('array_column')) {
@@ -40,6 +70,15 @@ if (!function_exists('array_column')) {
         return Future\Utility::arrayColumn($array, $column_key, $index_key);
     }
 }
+if (!function_exists('getimagesizefromstring')) {
+    /**
+     * Get the size of an image from a string
+     */
+    function array_column(array $array, $column_key, $index_key = null)
+    {
+        return Future\Image::
+    }
+}
 
 if (!function_exists('boolval')) {
     /**
@@ -48,6 +87,22 @@ if (!function_exists('boolval')) {
     function boolval($mixed_var)
     {
         return !!$mixed_var;
+    }
+}
+
+if (!function_exists('hex2bin')) {
+    /**
+     * From PHP 5.4
+     *
+     * @ref https://php.net/hex2bin
+     *
+     * @param string $data
+     *
+     * @return string
+     */
+    function hex2bin($data)
+    {
+        return Future\Utility::hexToBin($data);
     }
 }
 
@@ -99,6 +154,26 @@ if (!function_exists('hash_pbkdf2')) {
             return bin2hex($key);
         }
         return $key;
+    }
+}
+
+if (!function_exists('getimagesizefromstring')) {
+    /**
+     * From PHP 5.4
+     *
+     * @ref https://php.net/getimagesizefromstring
+     *
+     * @param string $imagedata
+     * @param &array $imageinfo
+     *
+     * @return array
+     */
+    function getimagesizefromstring($imagedata, &$imageinfo = null)
+    {
+        if ($imageinfo !== null) {
+            return Future\Image::imageSizeFromString($imagedata, $imageinfo);
+        }
+        return Future\Image::imageSizeFromString($imagedata);
     }
 }
 

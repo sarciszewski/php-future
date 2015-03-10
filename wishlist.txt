@@ -1,15 +1,9 @@
 PHP 5.4
-
-    FUNCTIONS
-    =========
-    getimagesizefromstring()
-    hex2bin()
-    http_response_code()
     
     CLASSES/INTERFACES
     ==================
     CallbackFilterIterator
-    JsonSerializable
+    SessionHandler
     Spoofchecker
 
 PHP 5.5
