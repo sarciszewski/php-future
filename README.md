@@ -10,13 +10,17 @@ This should ONLY be used in the case that you cannot upgrade PHP for specific re
 
 ## ATTENTION PHP 5.2 / 5.3 USERS
 
-We only officially support for versions of PHP that have not reached or exceeded their end-of-life date. As of this writing, that means 5.4 and newer. **The code should still run on 5.3**. Don't try to run it on 5.2. Refer to http://php.net/eol.php for the latest updates on supported PHP versions.
+As a general rule, we do not provide support for [any unsupported versions of PHP](http://php.net/eol.php). This means 5.4.x as of this writing.
+
+If your operating system supports a 5.3.x version that is EOL'd (e.g. PHP 5.3.10 on Ubuntu 12.04 has security fixes backported), we will make exceptions. **The purpose of this library is not to encourage complacency and insecurity. Patch your systems.**
+
+We do not support PHP 5.2.x anywhere. Please upgrade to a newer version of PHP.
 
 ## Features polyfilled by this library
 
 
 * PHP 5.4
-  * None, because that could encourage the continued use of 5.3
+  * N/A
 * PHP 5.5
   * `array_column()`
   * `boolval()`
