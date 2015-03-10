@@ -1,5 +1,7 @@
 # php-future
 
+[![Build Status](https://travis-ci.org/resonantcore/php-future.svg?branch=master)](https://travis-ci.org/resonantcore/php-future)
+
 This library backports some new features into old versions of PHP.
 
 This **MIT Licensed** project is produced and maintained by [Resonant Core](https://resonantcore.net) for the good of the PHP developer community.
