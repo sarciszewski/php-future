@@ -7,8 +7,9 @@ Also added a `BaseFuture` class to prevent code duplication.
 
 ### New functions polyfilled
 
-* `getimagesizefromstring()`
-* `hex2bin()`
+* **PHP 5.4**
+    * `getimagesizefromstring()`
+    * `hex2bin()`
 
 ### New interfaces polyfilled
 
