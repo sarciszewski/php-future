@@ -30,7 +30,7 @@ We do not support PHP 5.2.x anywhere. Please upgrade to a newer version of PHP.
 * PHP 7.0
   * N/A
 
-See [wishlist.txt] for features we will be providing as time goes on.
+See [wishlist.txt](wishlist.txt) for features we will be providing as time goes on. **To add to this list, either send a pull request, a [tweet](https://twitter.com/ResonantCore), or [an email](https://resonantcore.net/contact) and we'll consider it for inclusion.**
 
 ### Out of scope:
 
