@@ -32,7 +32,7 @@ We do not support PHP 5.2.x anywhere. Please upgrade to a newer version of PHP.
 * PHP 7.0
   * N/A
 
-See [wishlist.txt](wishlist.txt) for features we will be providing as time goes on. **To add to this list, either send a pull request, a [tweet](https://twitter.com/ResonantCore), or [an email](https://resonantcore.net/contact) and we'll consider it for inclusion.**
+See [wishlist.txt](wishlist.txt) for features we will be providing as time goes on. **To add to this list, either send a pull request, a [tweet](https://twitter.com/vodooKobra), or [an email](https://scott.arciszewski.me/contact) and we'll consider it for inclusion.**
 
 ### Out of scope:
 
@@ -61,7 +61,7 @@ ensures that PHP only load the codes when it actually needs it.
 ### Composer
 
 ```sh
-composer require resonantcore/php-future
+composer require sarciszewski/php-future
 ```
 
 ### Any script
@@ -70,5 +70,5 @@ Just include our `autoload.php` script outside of our `src` directory and you're
 good to go. For example:
 
 ```php
-require_once "vendor/resonantcore/php-future/autoload.php";
+require_once "vendor/sarciszewski/php-future/autoload.php";
 ```
