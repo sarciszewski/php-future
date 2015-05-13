@@ -1,5 +1,5 @@
 <?php
-use \Resonantcore\PHPFuture as Future;
+use \Sarciszewski\PHPFuture as Future;
 spl_autoload_register(function ($class) {
     
     // project-specific namespace prefix
