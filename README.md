@@ -1,6 +1,6 @@
 # php-future
 
-[![Build Status](https://travis-ci.org/resonantcore/php-future.svg?branch=master)](https://travis-ci.org/resonantcore/php-future)
+[![Build Status](https://travis-ci.org/sarciszewski/php-future.svg?branch=master)](https://travis-ci.org/sarciszewski/php-future)
 
 This library backports some new features into old versions of PHP.
 
