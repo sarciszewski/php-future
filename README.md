@@ -4,7 +4,7 @@
 
 This library backports some new features into old versions of PHP.
 
-This **MIT Licensed** project is produced and maintained by [Resonant Core](https://resonantcore.net) for the good of the PHP developer community.
+This **MIT Licensed** project is produced and maintained for the good of the PHP developer community.
 
 ## WARNING ABOUT APPLICATION SECURITY
 
