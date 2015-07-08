@@ -79,7 +79,7 @@ class Security extends BaseFuture
             $xorsum = \hash_hmac($algo, $last, $password, true);
             $last = $xorsum;
             for ($j = 1; $j < $iterations; ++$j) {
-                $xorsum ^= ($last = \hash_hmac($algorithm, $last, $password, true));
+                $xorsum ^= ($last = \hash_hmac($algo, $last, $password, true));
             }
             $output .= $xorsum;
         }

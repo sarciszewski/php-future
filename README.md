@@ -39,6 +39,9 @@ See [wishlist.txt](wishlist.txt) for features we will be providing as time goes 
 * Password API - Go directly to https://github.com/ircmaxell/password_compat for these implementations
   * `password_hash()`
   * `password_verify()`
+* PHP 7 CSPRNG - Go directly to https://github.com/paragonie/random_compat for these implementations
+  * `random_bytes()`
+  * `random_int()`
 
 ## Why?
 

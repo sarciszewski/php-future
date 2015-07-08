@@ -35,11 +35,3 @@ PHP 5.6
     gmp_rootrem()
     ldap_escape()
     ldap_modify_batch()
-
-PHP 7.0
-
-    Pending PHP pull request #1036:
-        bin2hex_ts()
-        hex2bin_ts()
-        base64_encode_ts()
-        base64_decode_ts()
