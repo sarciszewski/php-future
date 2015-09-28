@@ -1,10 +1,10 @@
 <?php
-use \ResonantCore\PHPFuture as Future;
+use \Sarciszewski\PHPFuture as Future;
 
 class TestSecurity extends PHPUnit_Framework_TestCase
 {
     /**
-     * @covers \ResonantCore\PHPFuture\Utilty::arrayColumn()
+     * @covers \Sarciszewski\PHPFuture\Utilty::arrayColumn()
      */
     public function testArrayColumn()
     {

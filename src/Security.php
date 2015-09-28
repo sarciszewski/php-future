@@ -29,8 +29,9 @@ class Security extends BaseFuture
     /**
      * Equivalent to hash_equals() in PHP 5.6 
      * 
-     * @param  string $knownString
-     * @param  string $userString
+     * @param string $knownString
+     * @param string $userString
+     * 
      * @return bool
      */
     public static function hashEquals($knownString, $userString)
@@ -59,6 +60,8 @@ class Security extends BaseFuture
      * @param string $salt
      * @param int $iterations
      * @param int $length
+     * 
+     * @return string
      */
     public static function pbkdf2($algo, $password, $salt, $iterations, $length = 0)
     {

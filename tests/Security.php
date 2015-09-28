@@ -1,10 +1,10 @@
 <?php
-use \ResonantCore\PHPFuture as Future;
+use \Sarciszewski\PHPFuture as Future;
 
 class TestSecurity extends PHPUnit_Framework_TestCase
 {
     /**
-     * @covers \ResonantCore\PHPFuture\Security::hashEquals()
+     * @covers \Sarciszewski\PHPFuture\Security::hashEquals()
      */
     public function testHashEquals()
     {
@@ -21,7 +21,7 @@ class TestSecurity extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers \ResonantCore\PHPFuture\Security::pbkdf2()
+     * @covers \Sarciszewski\PHPFuture\Security::pbkdf2()
      * ref https://www.ietf.org/rfc/rfc6070.txt
      */
     public function testPBKDF2()

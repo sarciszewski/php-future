@@ -3,7 +3,7 @@ use \Sarciszewski\PHPFuture as Future;
 spl_autoload_register(function ($class) {
     
     // project-specific namespace prefix
-    $prefix = 'Resonantcore\\PHPFuture\\';
+    $prefix = 'Sarciszewski\\PHPFuture\\';
 
     // base directory for the namespace prefix
     $base_dir = __DIR__ . '/src/';
@@ -103,8 +103,8 @@ if (!function_exists('hash_equals')) {
      * 
      * @ref https://php.net/hash_equals
      *
-     * @param string $a
-     * @param string $b
+     * @param string $known_string
+     * @param string $user_string
      *
      * @return boolean
      */
@@ -176,8 +176,8 @@ if (!function_exists('openssl_pbkdf2')) {
      *
      * @param string $password
      * @param string $salt
-     * @param int $iterations
      * @param int $length
+     * @param int $iterations
      * @param string $algo
      *
      * @return string
