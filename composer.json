@@ -26,8 +26,8 @@
         "files": ["autoload.php"]
     },
     "require": {
-        "paragonie/random_compat": "^1|^2",
-        "paragonie/sodium_compat": "^1.6",
+        "paragonie/random_compat": "^1|^2|^9",
+        "paragonie/sodium_compat": "^1|^2",
         "ircmaxell/password_compat": "^1.0"
     },
     "require-dev": {
